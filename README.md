@@ -1,8 +1,8 @@
-# TalentReef Java API Interview Template
+# Java Widgets Backend Service
 
 ## Description
 
-This [Spring Boot](https://spring.io/projects/spring-boot) project is provided as a starting template for the TalentReef take-home interview. Feel free to make whatever modifications are necessary to complete the exercise.
+This [Spring Boot](https://spring.io/projects/spring-boot) project is a Backend Service for the take-home interview challenge. 
 
 ## Requirements
 
@@ -18,12 +18,12 @@ Start the server using Gradle:
 
 See [Running your Application with Gradle](https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/htmlsingle/#running-your-application) for more information.
 
+
 Execute tests using Gradle:
 
 ```shell
 ./gradlew test
 ```
 
-## Additional Information
-
-TalentReef will provide you the contact information of a person who can answer questions about the exercise.
+## Important
+Make sure to run this backend service before any UI service, and consider that any data created will  be wiped every time the server reloads.

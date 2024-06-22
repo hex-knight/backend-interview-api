@@ -50,7 +50,7 @@ public class WidgetControllerTests {
     List<Widget> allWidgets = List.of(widget);
     when(widgetService.getAllWidgets()).thenReturn(allWidgets);
 
-    MvcResult result = mockMvc.perform(get("/v1/widgets"))
+    MvcResult result = mockMvc.perform(get("/api/widgets"))
                .andExpect(status().isOk())
                .andDo(print())
                .andReturn();

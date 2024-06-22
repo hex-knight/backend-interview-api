@@ -1,11 +1,7 @@
 package com.talentreef.interviewquestions.takehome.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
@@ -21,4 +17,31 @@ public class Widget {
 
   private String name;
 
+  private Double price;
+
+  private Integer starRating;
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public Double getPrice() {
+    return price;
+  }
+
+  public void setPrice(Double price) {
+    this.price = price;
+  }
+
+  public Integer getStarRating() {
+    return starRating;
+  }
+
+  public void setStarRating(Integer starRating) {
+    this.starRating = starRating;
+  }
 }
